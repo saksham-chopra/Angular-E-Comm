@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "brand": "ANI~FAN",
+      "image": "https://i2.wp.com/www.univers-otaku.com/wp-content/uploads/2018/04/products-t-shirt-3d-t-shirt-3d-all-over-bleach-ichigo-bankai-1.jpg?fit=1042%2C1134&ssl=1",
+      "currentPrice": "600",
+      "standardPrice": "1200",
+      "discount": "50",
+      "name": "ICHIGO t-shirt"
+    },
+    {
+      "brand": "ANI~FAN",
+      "image": "https://m.media-amazon.com/images/I/71ONtYIVq9S._AC_SX569_.jpg",
+      "currentPrice": "400",
+      "standardPrice": "600",
+      "discount": "40",
+      "name": "Naruto t-shirt",
+      "id": "2"
+    },
+    {
+      "brand": "ANI~FAN",
+      "image": "https://m.media-amazon.com/images/I/61M6wd9SGnL._AC_UL1000_.jpg",
+      "currentPrice": "600",
+      "standardPrice": "1200",
+      "discount": "50",
+      "name": "Goku T-Shirt",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "brand": "ANI~FAN",
+      "image": "https://m.media-amazon.com/images/I/61sfFBQbqBL._AC_UX466_.jpg",
+      "currentPrice": "300",
+      "standardPrice": "600",
+      "discount": "50",
+      "name": " Black GOKU t-shirt"
+    },
+    {
+      "id": "5",
+      "brand": "ANI~FAN",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71vakW15oYL._AC_UL1500_.jpg",
+      "currentPrice": "300",
+      "standardPrice": "600",
+      "discount": "50",
+      "name": "7~Deadly Sins T-Shirt"
+    },
+    {
+      "id": "6",
+      "brand": "ANI~FAN",
+      "image": "https://i.pinimg.com/originals/64/a7/0b/64a70ba92c8518423e7fab04092f9f53.jpg",
+      "currentPrice": "300",
+      "standardPrice": "600",
+      "discount": "50",
+      "name": "One Piece T-Shirt"
+    },
+    {
+      "id": "7",
+      "brand": "ANI~FAN",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61732lhri8L._AC_UL1200_.jpg",
+      "currentPrice": "150",
+      "standardPrice": "300",
+      "discount": "50",
+      "name": "Black Clover~Asta T-Shirt"
+    },
+    {
+      "id": "8",
+      "brand": "ANI~FAN",
+      "image": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/974ebce23ccf40beb0cb5ada1bd449a5_Medium.jpg",
+      "currentPrice": "374",
+      "standardPrice": "1,499",
+      "discount": "75",
+      "name": "MHA~All Might t-shirt"
+    },
+    {
+      "id": "9",
+      "brand": "ANI~FAN",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61fZco8v8tS._AC_UX679_.jpg",
+      "currentPrice": "950",
+      "standardPrice": "3799",
+      "discount": "74",
+      "name": "Zarkhi Kenpachi t-shirt"
+    },
+    {
+      "id": "10",
+      "brand": "ANI~FAN",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/action-figure/o/c/a/10-uchiha-itachi-figure-pvc-anime-figure-cartoon-action-figure-original-imagvrg7vnjdxkfm.jpeg?q=70&crop=false",
+      "currentPrice": "1750",
+      "standardPrice": "5000",
+      "discount": "65",
+      "name": "ITACHI action figure"
+    },
+    {
+      "brand": "ANI~FAN",
+      "image": "https://i.pinimg.com/originals/a0/a2/db/a0a2db1108a0760a0f932ab56e0ff6d4.jpg",
+      "currentPrice": "2000",
+      "standardPrice": "4000",
+      "discount": "50",
+      "name": "Brook action figure",
+      "id": "de0b"
+    }
+  ],
+  "cartItems": []
+}

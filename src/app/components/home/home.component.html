@@ -1,0 +1,21 @@
+<div class="px-16" style="width: 1500px;">
+    <div class="flex justify-between">
+    <h1>Product List</h1>
+    <button mat-raised-button color="primary" routerLink="/add-product">Add Product</button>
+</div>
+    <div>
+        <mat-form-field class="w-full" appearance="outline">
+            <input matInput type="text" placeholder="search product" [formControl]="searchControl">
+        </mat-form-field>
+    </div>
+    <div class="w-full flex flex-wrap" >
+        @for(item of filteredProducts; track $index ){
+        <div class="w-3/12 px-3 mb-6" >
+            <app-product-card [product]="item"></app-product-card>
+        </div>
+    }@empty {
+        <h4 class="text-red-400">No Product Found</h4>
+    }
+    </div>
+    <!-- <mat-paginator [pageSizeOptions]="[5,10]" ></mat-paginator> -->
+</div>

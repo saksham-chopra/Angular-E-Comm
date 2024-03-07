@@ -1,0 +1,18 @@
+<mat-card class="w-full shadow-lg">
+    <img class="!h-96 !w-auto !max-w-full" 
+    [src]="product.image" 
+    mat-card-image
+    alt="">
+    <div class="p-4 h-52">
+        <h2 class="font-semibold !m-0">{{product.brand}}</h2>
+        <h4 class="!m-0">{{product.name}}</h4>
+        <div class="flex justify-center px-4 py-3 gap-3">
+            <span class="text-green-500">Rs. {{product.currentPrice}}</span>
+            <span class="text-gray-500"><s>Rs. {{product.standardPrice}}</s></span>
+            <span class="text-orange-500 ">({{product.discount}}% OFF)</span>
+        </div>
+        <div class="flex justify-center">
+            <button mat-flat-button class="w-9/12 !bg-yellow-600 !text-white " (click)="onbuy()">BUY</button>
+        </div>
+    </div>
+</mat-card>

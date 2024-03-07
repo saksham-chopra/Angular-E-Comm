@@ -1,0 +1,54 @@
+<div style="width: 1000px;" class="flex justify-center">
+    <form [formGroup]="productForm" class="w-full shadow-lg p-8" >
+      @if(isEdit){
+        <h2>Update form details</h2>
+      }@else {
+        <h2>Add form detail</h2>
+      }
+        <div class="flex w-full flex-wrap">
+        <div class="flex w-full">
+            <mat-form-field class="w-full">
+                <mat-label>Name</mat-label>
+                <input type="text" matInput placeholder="name" formControlName="name">
+            </mat-form-field>
+        </div>
+        <div class=" w-full" >
+            <mat-form-field class="w-full">
+                <mat-label>Brand</mat-label>
+                <input type="text" matInput placeholder="brand" formControlName="brand">
+            </mat-form-field>
+        </div>
+        <div class=" w-full">
+            <mat-form-field class="w-full">
+                <mat-label>Image</mat-label>
+                <input type="text" matInput placeholder="image" formControlName="image">
+            </mat-form-field>
+        </div>
+        <div class=" w-full">
+            <mat-form-field class="w-full">
+                <mat-label>Current Price</mat-label>
+                <input type="text" matInput placeholder="currentPrice" formControlName="currentPrice">
+            </mat-form-field>
+        </div>
+        <div class=" w-full">
+            <mat-form-field class="w-full">
+                <mat-label>Standard Price</mat-label>
+                <input type="text" matInput placeholder="standardPrice" formControlName="standardPrice">
+            </mat-form-field>
+        </div>
+        <div class=" w-full">
+            <mat-form-field class="w-full">
+                <mat-label>Discount</mat-label>
+                <input type="text" matInput placeholder="discount" formControlName="discount">
+            </mat-form-field>
+        </div>
+        <div class="w-full flex justify-center">
+            @if(isEdit){
+                <button type="button" mat-raised-button color="primary" (click)="update()">Update</button>
+            }@else{
+            <button type="button" mat-raised-button color="primary" (click)="submit()">Add</button>
+            }
+        </div>
+    </div>
+    </form>
+</div>

@@ -1,0 +1,40 @@
+<div class="w-full flex flex-wrap" style="width: 1400px; max-width: 100%;">
+    <div class="w-8/12 p-4">
+        <div class="shadow border">
+            @for(product of cartItems; track product){
+            <div class="flex border-b p-4">
+                <div class="w-4/12">
+                    <img class="max-width-52"
+                     [src]="product.image" alt="">
+                </div>
+                <div class="w-8/12">
+                    <h2>{{product.name}}</h2>
+                    <h4>{{product.brand}}</h4>
+                    <div class="flex gap-4">
+                        <span class="text-xl text-green-400">Rs. {{product.currentPrice}}</span>
+                        <span class="text-xl"><s>Rs. {{product.standardPrice}}</s></span>
+                        <span class="text-xl text-orange-300">{{product.discount}}% OFF</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="border text-2xl px-4 shadow-lg" (click)="decreaseQuantity(product)">-</button>
+                        <input type="text" [value]="product.quantity" readonly name="productQuantity"  class="w-8 border pl-2">
+                        <button class="border text-2xl px-4 shadow-lg" (click)="increaseQuantity(product)">+</button>
+                        <button class="border text-2xl px-4 shadow-lg" (click)="removeProduct(product)">Remove</button>
+                    </div>
+                </div>
+            </div>
+        }@empty {
+            <h4>No Item in the Cart...</h4>
+        }
+        </div>
+    </div>
+    <div class="w-4/12 p-4">
+        <div class="shadow border p-4 flex flex-col gap-2">
+        <h2 class="border-b-2 mb-4">Price Detail</h2>
+        <div class="flex justify-between "><span>Price ( {{cartItems.length}} items )</span><span>Rs {{totalPrice}}</span></div>
+        <div class="flex justify-between "><span>Discount</span><span>Rs. {{totalDiscount}}</span></div>
+        <div class="flex justify-between "><span>Total Ammount</span><span>Rs. {{totalAmount}}</span></div>
+        <h3 class="text-xl !font-bold">You have saved Rs. {{totalDiscount}} on this order</h3>
+    </div>
+    </div>
+</div>

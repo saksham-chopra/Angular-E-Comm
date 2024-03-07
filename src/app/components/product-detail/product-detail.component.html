@@ -1,0 +1,40 @@
+<!-- {{product|json}} -->
+@if(product){
+<mat-card class="mx-16 mt-4">
+    <div class="flex w-full flex-wrap">
+        <div class="w-6/12 flex flex-col item-center p-8 gap-4">
+            <img [src]="product.image" alt="" />
+            <div class="flex justify-center gap-4">
+                <button mat-flat-button  class="w-4/12 !bg-yellow-600 !text-white " 
+                 >BUY
+                </button>
+                <button mat-flat-button  class="w-4/12 !bg-purple-600 !text-white " (click)="addToCart()"
+                 >Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="w-6/12 p-8">
+            <div class="flex justify-between">
+                <h2 class="font-semibold !m-0">{{product.brand}}</h2>
+                <div class="flex gap-4">
+                    <button mat-flat-button color="primary" (click)="edit()">Edit</button>
+                    <button mat-flat-button color="warn" (click)="delete()">Delete</button>
+                </div>
+            </div>
+                <h4 class="!m-0">{{product.name}}</h4>
+                <p class="text-lg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores explicabo ad, voluptas obcaecati ut laborum doloribus in placeat facere perferendis quae ratione. Necessitatibus, laboriosam maxime! Sequi obcaecati provident quod.
+                </p>
+                <div class="flex items-center px-4 py-3 gap-3">
+                    <span class="text-green-500">Rs. {{product.currentPrice}}</span>
+                    <span class="text-gray-500"><s>Rs. {{product.standardPrice}}</s></span>
+                    <span class="text-orange-500 ">({{product.discount}}% OFF)</span>
+                </div>
+                
+            
+        </div>
+    </div>
+</mat-card>
+}@else {
+    <h4>Loading...</h4>
+}
